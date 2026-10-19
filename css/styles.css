@@ -17,3 +17,16 @@ h2 {
 body {
   background-color: #f7f7ec;
 }
+.ws-logo-200-blk {
+  width: 200px;
+  height: 200px;
+  fill: black;
+}
+.ws-logo-100 {
+  width: 100px;
+  height: 100px;
+}
+path {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+}
