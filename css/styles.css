@@ -1,0 +1,19 @@
+/* Load Cooper Black font */
+@font-face {
+  font-family: "Cooper Black";
+  src:
+    url("fonts/cooper-black.woff2") format("woff2"),
+    url("fonts/cooper-black.woff") format("woff"),
+    url("fonts/cooper-black.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Apply it to elements */
+h1,
+h2 {
+  font-family: "Cooper Black", serif;
+}
+body {
+  background-color: #f7f7ec;
+}
