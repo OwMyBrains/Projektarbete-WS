@@ -18,6 +18,7 @@ h1 {
   text-align: center;
 }
 body {
+  font-family: Arial, Helvetica, sans-serif;
   background-color: #f7f7ec;
   margin:0;
 
@@ -72,7 +73,6 @@ margin: 0;
   border-bottom: 1px solid #FF9997;
 }
 .medlem-btn {
-  font-family: Arial, Helvetica, sans-serif;
   height: auto;
   width: 130px;
   border-radius: 15px;
@@ -92,7 +92,6 @@ a {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   gap: 1.4rem;
   padding: 13px;
@@ -103,10 +102,9 @@ a {
 /*FOOTER*/
 
 .footer {
-  font-family: Arial, Helvetica, sans-serif;
   display: grid;
   grid-template-rows: 1;
-  grid-template-columns: 1fr 4fr 1fr 2fr;
+  grid-template-columns: 1fr 4fr 1fr 1fr;
   align-items: center;
   gap: 40px;
   margin-left: 60px;
@@ -118,7 +116,6 @@ a {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.9rem;
   width: auto;
 }
@@ -136,7 +133,9 @@ a {
   height: 40px;
   width: auto;
 }
-.contact p {
+.contact li {
+  font-size: 0.9rem;
+  list-style-type: none;
   height: 15px;
 }
 footer h2 {
@@ -150,7 +149,6 @@ footer h2 {
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
   }
   .nav-link {
