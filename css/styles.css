@@ -14,8 +14,23 @@ h1,
 h2 {
   font-family: "Cooper Black", serif;
 }
+h1 {
+  text-align: center;
+}
 body {
   background-color: #f7f7ec;
+  margin-left: 0;
+  margin-right: 0;
+}
+header {
+  padding-bottom: 10px;
+}
+footer {
+  padding-top: 20px;
+}
+main {
+  background-color: #fee8c8;
+  padding: 10px;
 }
 .ws-logo-200-blk {
   width: 200px;
