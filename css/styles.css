@@ -1,4 +1,4 @@
-/* Load Cooper Black font */
+/*FONT*/
 @font-face {
   font-family: "Cooper Black";
   src:
@@ -9,11 +9,11 @@
   font-style: normal;
 }
 
-/* Apply it to elements */
-h1,
-h2 {
+.cooper-blk {
   font-family: "Cooper Black", serif;
 }
+/*FONT END*/
+
 h1 {
   text-align: center;
 }
@@ -24,14 +24,20 @@ body {
 }
 header {
   padding-bottom: 10px;
+  border-bottom: 1px solid #3b541d;
 }
 footer {
-  padding-top: 20px;
+  border-top: 1px solid #3b541d;
+  padding-top: 10px;
+  padding-bottom: 40px;
 }
 main {
+  height: 900px;
   background-color: #fee8c8;
   padding: 10px;
 }
+
+/*LOGOTYP WS*/
 .ws-logo-200-blk {
   width: 200px;
   height: 200px;
@@ -40,10 +46,32 @@ main {
 .ws-logo-100-blk {
   width: 100px;
   height: 100px;
+  fill: black;
+}
+.ws-logo-80-blk {
+  width: 80px;
+  height: 80px;
+  fill: black;
 }
 path {
   fill-rule: evenodd;
   clip-rule: evenodd;
+}
+/*LOGOTYP WS*/
+
+/*HEADER*/
+
+.header {
+  display: grid;
+  grid-template-rows: 1;
+  grid-template-columns: 2fr 3fr 1fr;
+  align-items: center;
+  gap: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+  justify-content: space-around;
 }
 .medlem-btn {
   font-family: Arial, Helvetica, sans-serif;
@@ -51,38 +79,104 @@ path {
   width: 130px;
   border-radius: 15px;
   background-color: #a8cc78;
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-align: center;
   padding: 13px;
+}
+.medlem-btn:hover {
+  background-color: #f8c77e;
 }
 a {
   color: black;
   text-decoration: none;
 }
 .nav-menu {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.2rem;
-  width: auto;
+  font-size: 1rem;
+  gap: 1.4rem;
+  padding: 13px;
+  height: auto;
 }
-.link {
-  height: 30px;
-}
-.header {
+/*HEADER END*/
+
+/*FOOTER*/
+
+.footer {
+  font-family: Arial, Helvetica, sans-serif;
   display: grid;
   grid-template-rows: 1;
   grid-template-columns: 1fr 3fr 1fr;
   align-items: center;
   gap: 40px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 60px;
+  margin-right: 60px;
   justify-content: space-around;
 }
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  width: auto;
+}
+.f-link {
+  height: 25px;
+}
+.contact p {
+  height: 15px;
+}
+footer h2 {
+  text-align: center;
+}
+/*FOOTER END*/
 
 @media (min-width: 768px) {
   .nav-menu {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-end;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
   }
+  .nav-link {
+    padding: 13px;
+    height: auto;
+    width: auto;
+  }
+  /* NAVLINK ANIMATION */
+  .nav-link-underline {
+    position: relative;
+    display: inline-block;
+  }
+
+  .nav-link-underline::after,
+  .nav-link-underline::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, #ffd4b0, #a8cc78);
+    bottom: 0px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease-out;
+  }
+
+  .nav-link-underline::before {
+    top: 0px;
+    transform-origin: left;
+  }
+
+  .nav-link-underline:hover::after,
+  .nav-link-underline:hover::before {
+    transform: scaleX(1);
+  }
+  /* NAVLINK ANIMATION END */
 }
