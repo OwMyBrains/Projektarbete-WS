@@ -17,6 +17,10 @@
 h1 {
   text-align: center;
 }
+/*H2 Ska troligtvis ändras senare*/
+h2{
+  text-align: center;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f7f7ec;
@@ -28,9 +32,10 @@ footer {
   padding-bottom: 40px;
 }
 main {
-  height: 900px;
+  height: auto;
   background-color: #fee8c8;
   width: 100%;
+  padding-bottom: 40px;
 }
 
 /*LOGOTYP WS*/
@@ -173,6 +178,15 @@ a {
 
 /*CURTAIN MENU END*/
 /*HEADER END*/
+
+/*MAIN*/
+.text-div {
+  width: 500px;
+  height: auto;
+  background-color: #f7f7ec;
+  padding: 30px;
+}
+/*MAIN END*/
 
 /*FOOTER*/
 
