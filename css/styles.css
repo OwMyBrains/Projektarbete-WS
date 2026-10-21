@@ -61,7 +61,7 @@ path {
 .header {
   display: grid;
   grid-template-rows: 1;
-  grid-template-columns: 2fr 3fr 1fr;
+  grid-template-columns: 6fr 1fr 1fr;
   align-items: center;
   position: sticky;
   top: 0;
@@ -114,7 +114,7 @@ a {
 .menu-toggle{
   border: none;
   background-color: #f7f7ec;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   width: 2rem;
   height: 2rem;
 }
