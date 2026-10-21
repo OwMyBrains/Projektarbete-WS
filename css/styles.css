@@ -60,7 +60,7 @@ path {
 .header {
   display: grid;
   grid-template-rows: 1;
-  grid-template-columns: 6fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 4fr 1fr;
   align-items: center;
   position: sticky;
   top: 0;
