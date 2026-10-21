@@ -1,5 +1,16 @@
 "use strict";
 
+//HAMBURGER MENU
+
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+//HAMBURGER MENU END
+
 //ACE-lista START
 aceList();
 aceCount();

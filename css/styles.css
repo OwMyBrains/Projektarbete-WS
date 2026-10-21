@@ -30,7 +30,6 @@ footer {
 main {
   height: 900px;
   background-color: #fee8c8;
-  padding: 10;
   width: 100%;
 }
 
@@ -93,12 +92,7 @@ a {
   display: none;
   width: 100%;
 }
-.menu.open{
-  display: block;
-}
-.menu-toggle {
-  cursor: pointer;
-}
+
 .nav-menu {
   display: flex;
   justify-content: space-between;
@@ -118,6 +112,66 @@ a {
   width: 2rem;
   height: 2rem;
 }
+/*CURTAIN MENU*/
+@media (max-width: 767px) {
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  color: #f7f7ec;
+}
+.overlay-content:hover{
+  color: #FF9997;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #f7f7ec;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #FF9997;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 40px;
+  color: #f7f7ec;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+}
+
+/*CURTAIN MENU END*/
 /*HEADER END*/
 
 /*FOOTER*/
@@ -164,14 +218,17 @@ footer h2 {
 /*FOOTER END*/
 
 @media (min-width: 768px) {
-  .menu-toggle{
+  .menu-toggle {
     display: none;
   }
   .menu {
     display: block;
   width:auto
   }
-
+  
+.overlay{
+  display: none;
+}
   .nav-menu {
     display: flex;
     flex-direction: row;
