@@ -40,7 +40,6 @@ main {
   height: auto;
   background-color: #fee8c8;
   width: auto;
-  padding-top: 10px;
 }
 header {
   position: sticky;
@@ -88,10 +87,11 @@ path {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   margin: 0;
-  padding: 16px 50px;
+  padding: 16px 50px 16px 50px;
   justify-content: space-evenly;
   background-color: #f7f7ec;
 }
+
 .medlem-btn {
   height: auto;
   width: 130px;
@@ -126,19 +126,42 @@ a {
   display: none;
   width: 100%;
 }
-
+.menu li {
+  list-style-type: none;
+}
 .nav-menu {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   font-size: 1rem;
   gap: 1.4rem;
-  padding: 13px;
+  padding: 13px 13px 0 13px;
   height: auto;
 }
-.menu li {
-  list-style-type: none;
+.nav-submenu{
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: flex-start;
+padding-left: auto;
+padding-right: auto;
 }
+
+.submenu {
+background-color: #f7f7ec;
+padding: 0;
+margin-top: -16px;
+height:45px;
+}
+.submenu li{
+list-style-type: none;
+}
+.nav-link-sub {
+  font-size: 0.8rem;
+  margin-top: 7px;
+  padding: 8px;
+}
+
 
 /*CURTAIN MENU*/
 @media (max-width: 929px) {
@@ -149,7 +172,7 @@ a {
   width: 2rem;
   height: 2rem;
   margin-right: auto;
-margin-left: 25px;
+  margin-left: 25px;
 }
 .overlay {
   height: 0%;
@@ -454,6 +477,7 @@ border-bottom: 5px solid #f7f7ec;
   grid-template-rows: 1;
   grid-template-columns: 1fr 2fr 4fr 1fr;
   }
+  
   .footer {
   display: grid;
   grid-template-rows: 1;
