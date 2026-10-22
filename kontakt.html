@@ -341,7 +341,7 @@
 					<a href="nyheter.html">Nyheter</a>
 					<a href="banan.html">Banan</a>
 					<a href="foreningen.html">Föreningen</a>
-					<a href="kontakt.html">Kontakt</a>
+					<a href="kontakt.html" aria-current="page">Kontakt</a>
 				</div>
 			</div>
 			<span class="menu-toggle" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
@@ -354,14 +354,27 @@
 					<li class="nav-link nav-link-underline"><a href="nyheter.html">Nyheter</a></li>
 					<li class="nav-link nav-link-underline"><a href="banan.html">Banan</a></li>
 					<li class="nav-link nav-link-underline"><a href="foreningen.html">Föreningen</a></li>
-					<li class="nav-link nav-link-underline"><a href="kontakt.html">Kontakt</a></li>
+					<li class="nav-link nav-link-underline"><a href="kontakt.html" aria-current="page">Kontakt</a></li>
 				</ul>
 			</nav>
 			<div class="medlem-btn">
 				<a href="https://tjing.se/club/woodensala-frisbeesallskap/join" target="_blank">Bli medlem</a>
 			</div>
 		</div>
-		<h2 class="cooper-blk">Kontakt</h2>
+		<h2>Kontakt</h2>
+
+		<form>
+			<label for="name">Namn</label><br>
+			<input type="text" name="name" id="name"><br>
+			<label for="email">E-postadress</label><br>
+			<input type="email" name="email" id="email"><br>
+			<label for="subject">Ämne</label><br>
+			<input type="text" name="subject" id="subject"><br>
+			<label for="text">Skriv din fråga här</label><br>
+			<textarea name="text" id="text" rows="10" cols="30"></textarea><br>
+			<button type="submit">Skicka</button>
+		</form>
+
 	</main>
 	<footer>
 		<h2 class="cooper-blk">Woodensala - Folkets bana!</h2>
