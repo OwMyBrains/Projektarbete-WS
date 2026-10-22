@@ -39,6 +39,13 @@ main {
   height: auto;
   background-color: #fee8c8;
   width: auto;
+  padding-top: 10px;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  gap: 0px;
 }
 nav a[aria-current=page] {
   padding-bottom: 5px;
@@ -78,10 +85,6 @@ path {
   grid-template-rows: 2;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  gap: 0px;
  margin: 0;
  padding: 15px 50px;
   justify-content: space-evenly;
@@ -215,6 +218,7 @@ margin-left: 25px;
   border-radius: 20px;
   max-width: 400px;
   margin: 10px 0;
+  opacity: 75%;
 }
 .article {
 display: flex;
@@ -252,10 +256,10 @@ margin-right: auto;
   transform:scale(2);
 }
 .bgcolor1 {
-  background-color: #ffd4b0;
-}
-bgcolor2 {
   background-color: #fee8c8;
+}
+.bgcolor2 {
+  background-color: #ffd4b0;
 }
 .back-btn{
   padding: 4px 6px;
