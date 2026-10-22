@@ -1,18 +1,19 @@
-/*FONT*/
-@font-face {
-  font-family: "Cooper Black";
-  src:
-    url("fonts/cooper-black.woff2") format("woff2"),
-    url("fonts/cooper-black.woff") format("woff"),
-    url("fonts/cooper-black.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
+/*FONT
+
+font-family: "cooper-black-std", serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: "cooper-black-std", serif;
+font-weight: 400;
+font-style: italic;
+*/
 
 .cooper-blk {
-  font-family: "Cooper Black", serif;
+font-family: "cooper-black-std", serif;
+  font-weight: 400;
+  font-style: normal;
 }
-/*FONT END*/
 
 h1 {
   text-align: center;
@@ -107,14 +108,14 @@ path {
   height: auto;
   width: 130px;
   border-radius: 15px;
-  background-color: #fee8c8;
+  background-color: rgba(255, 153, 151, 0.4);
   font-size: 1rem;
   margin-left: auto;
   text-align: center;
   padding: 13px;
 }
 .btn:hover {
-  background-color: #FF9997;
+  background-color: rgba(255, 153, 151, 0.6);
 }
 a {
   color: black;
@@ -213,12 +214,12 @@ margin-left: 25px;
 .text-div {
   width: 500px;
   height: auto;
-  background-color: #f7f7ec;
+  background-color: rgba(247,247,236, 0.6);
   padding: 30px;
   border-radius: 20px;
   max-width: 400px;
   margin: 10px 0;
-  opacity: 75%;
+
 }
 .article {
 display: flex;
