@@ -57,6 +57,7 @@ nav a[aria-current=page] {
 .overlay-content a[aria-current=page] {
  color:#FF9997;
 }
+
 /*LOGOTYP WS*/
 .ws-logo-200-blk {
   width: 200px;
@@ -86,8 +87,8 @@ path {
   grid-template-rows: 2;
   grid-template-columns: 1fr 1fr;
   align-items: center;
- margin: 0;
- padding: 15px 50px;
+  margin: 0;
+  padding: 16px 50px;
   justify-content: space-evenly;
   background-color: #f7f7ec;
 }
@@ -221,6 +222,34 @@ margin-left: 25px;
   margin: 10px 0;
 
 }
+.hole-layout{
+display: grid;
+grid-template-columns: auto;
+grid-template-rows: auto;
+align-items: center;
+justify-content: center;
+height: auto;
+min-height: 300px;
+margin-left: auto;
+margin-right: auto;
+border-bottom: 5px solid #f7f7ec;
+}
+.hole-img {
+  height: 350px;
+  width:auto;
+  margin: 40px;
+}
+.hole-img-enlarge {
+  height: 600px;
+  width: auto;
+  z-index:200;
+  cursor: zoom-out;
+  display: block;
+  position: fixed;
+  left: auto;
+  right: auto;
+  top: 100px;
+}
 .article {
 display: flex;
 flex-direction: column;
@@ -232,6 +261,7 @@ padding-left: auto;
 padding-right: auto;
 border-bottom: 5px solid #f7f7ec;
 }
+
 .article img {
   height: 400px;
   width: auto;
@@ -251,10 +281,6 @@ align-items: center;
 gap: 40 px;
 margin-left: auto;
 margin-right: auto;
-
-}
-.article img:hover{
-  transform:scale(2);
 }
 .bgcolor1 {
   background-color: #fee8c8;
@@ -329,9 +355,7 @@ footer h2 {
   display: none;
 }
 .medlem-btn {
-
   margin-right: auto;
- 
 }
   .nav-menu {
     display: flex;
@@ -340,13 +364,15 @@ footer h2 {
     justify-content: flex-end;
     font-size: 1rem;
   }
+  
   .nav-link {
     padding: 13px;
     height: auto;
     width: auto;
   }
+
   /* NAVLINK ANIMATION */
-  .nav-link-underline {
+   .nav-link-underline {
     position: relative;
     display: inline-block;
   }
@@ -374,6 +400,7 @@ footer h2 {
   .nav-link-underline:hover::before {
     transform: scaleX(1);
   }
+
   /* NAVLINK ANIMATION END */
   .footer {
   display: grid;
@@ -385,6 +412,7 @@ footer h2 {
   margin-right: 60px;
   justify-content: space-around;
 }
+
 .footer-links {
   display: flex;
   flex-direction: column;
@@ -393,6 +421,19 @@ footer h2 {
   font-size: 0.9rem;
   width: auto;
   gap: 0;
+}
+
+.hole-layout{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto;
+align-items: center;
+justify-content: center;
+height: auto;
+min-height: 300px;
+padding-left: auto;
+padding-right: auto;
+border-bottom: 5px solid #f7f7ec;
 }
   .article {
 display: flex;
@@ -423,6 +464,20 @@ border-bottom: 5px solid #f7f7ec;
   margin-right: 60px;
   justify-content: space-around;
   }
+
+  .hole-layout{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: auto;
+align-items: center;
+justify-content: center;
+height: auto;
+min-height: 300px;
+padding-left: auto;
+padding-right: auto;
+border-bottom: 5px solid #f7f7ec;
+}
+
   .article {
 display: flex;
 flex-direction: row;
@@ -434,6 +489,7 @@ padding: 0 100px;
 gap: 30px;
 border-bottom: 5px solid #f7f7ec;
 }
+
 .course {
   display: grid;
  grid-template-rows: 2;
