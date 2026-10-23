@@ -197,14 +197,14 @@ path {
 /*HEADER*/
 
 .header {
-  display: grid;
-  grid-template-rows: 2;
-  grid-template-columns: 1fr 1fr;
+display: flex;
+flex-direction: row;
   align-items: center;
+  justify-content: flex-end;
   margin: 0;
-  padding: 16px 50px 16px 50px;
-  justify-content: space-evenly;
+  padding: 5px 50px 5px 50px;
   background-color: #f7f7ec;
+  width: auto;
 }
 
 .medlem-btn {
@@ -214,7 +214,9 @@ path {
   background-color: #a8cc78;
   font-size: 1rem;
   margin-left: auto;
+  margin-right: auto;
   text-align: center;
+  right: 0;
   padding: 13px;
 }
 .medlem-btn:hover {
@@ -265,7 +267,7 @@ a {
 .submenu {
   background-color: #f7f7ec;
   padding: 0;
-  margin-top: -16px;
+  margin-top: -30px;
   height: 45px;
 }
 .submenu li {
@@ -438,8 +440,8 @@ a {
   align-items: center;
   justify-content: center;
   gap: 40px;
-  margin-left: 150px;
-  margin-right: 60px;
+  margin-left: auto;
+  margin-right: auto;
   justify-content: space-around;
 }
 .footer-links {
@@ -478,7 +480,7 @@ footer h2 {
   }
 }
 
-@media (min-width: 930px) {
+@media (min-width: 910px) {
   .menu-toggle {
     display: none;
   }
@@ -541,21 +543,8 @@ footer h2 {
     transition: width 0.2s ease-in-out 0.2s;
   }
   /* NAVLINK ANIMATION END */
-  .footer {
-    display: grid;
-    grid-template-rows: 2;
-    grid-template-columns: 450px 450px;
-    gap: 20px;
-    left: auto;
-    right: auto;
-  }
 
-  .footer-links {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 0;
-  }
+
 
   .hole-layout {
     grid-template-columns: 260px 260px 260px;
@@ -566,19 +555,27 @@ footer h2 {
     padding: 0 30px;
     gap: 20px;
   }
+  .submenu {
+  height: 45px;
 }
+}
+@media (min-width: 1020px){
+    .footer {
+     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
 
+  }
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0;
+  }
+}
 @media (min-width: 1155px) {
-  .header {
-    grid-template-rows: 1;
-    grid-template-columns: 1fr 2fr 4fr 1fr;
-  }
 
-  .footer {
-    display: grid;
-    grid-template-rows: 1;
-    grid-template-columns: 1fr 4fr 1fr 1fr;
-  }
 
   .hole-layout {
     grid-template-columns: 260px 260px 260px 260px;
@@ -600,4 +597,6 @@ footer h2 {
     padding-left: 200px;
     padding-right: 200px;
   }
+  .submenu {
+  height: 45px;
 }
