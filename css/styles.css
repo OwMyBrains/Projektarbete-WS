@@ -122,10 +122,13 @@
 
 /*FONTS END*/
 
-h1 {
+h1, h2 {
   text-align: center;
   margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
 }
+
 
 body {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
@@ -366,12 +369,12 @@ a {
 
 /*MAIN*/
 .text-div {
-  width: 500px;
+  width: auto;
   height: auto;
   background-color: rgba(247, 247, 236, 0.6);
-  padding: 30px;
+  padding: 0px;
   border-radius: 20px;
-  max-width: 400px;
+  max-width: 500px;
   margin: 10px 0;
 }
 .hole-layout {
@@ -395,7 +398,9 @@ a {
   min-height: 300px;
   padding-left: auto;
   padding-right: auto;
-  border-bottom: 5px solid #f7f7ec;
+ padding-bottom: 5px;
+ padding-top: 0;
+ margin: 10px 0;
 }
 
 .article img {
@@ -407,7 +412,11 @@ a {
   height: auto;
   padding: 50px;
 }
-
+.headline {
+  width: 100%;
+  padding: 20px 0;
+  background-color: rgba(255, 153, 151, 0.4);
+}
 .course {
   display: flex;
   flex-direction: column;
@@ -474,6 +483,115 @@ footer h2 {
   text-align: center;
 }
 /*FOOTER END*/
+
+/*HOLE LAYOUT ENLARGE*/
+.image-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f7f7ec;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  max-width: auto;
+  max-height: auto;
+  overflow: auto;
+  border-radius: 20px;
+}
+
+/* Styling for the close button */
+.close-btn {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-color: rgba(255, 153, 151, 0.5);
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+/* Styling for the image */
+.image-container img {
+  width: auto;
+  height: 550px;
+  padding: 15px;
+  border-radius: 40px;
+}
+
+.hole-img {
+  height: 350px;
+  width: auto;
+  margin: 40px;
+}
+/*HOLE LAYOUT ENLARGE END*/
+
+/*TABLE LAYOUT*/
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  height: auto;
+  text-align: center;
+  background-color: rgba(247, 247, 236, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+th {
+  height: auto;
+  width: auto;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(255, 153, 151, 0.5);
+}
+td {
+  height: auto;
+  width: auto;
+  padding: px;
+  border-radius: 5px;
+  background-color: rgba(255, 153, 151, 0.3);
+}
+
+
+/*TABLE LAYOUT END*/
+
+/*FORM LAYOUT*/
+
+.form {
+width: auto;
+height: auto;
+margin: 30px;
+background-color: rgba(255, 153, 151, 0.3);
+border-radius: 10px;
+}
+
+.form input {
+  border: none;
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.form textarea {
+border: none;
+width: 300px;
+height:300px;
+border-radius: 5px;
+}
+.form button {
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #f7f7ec;
+}
+/*FORM LAYOUT END*/
+
+
 @media (min-width: 580px) {
   .hole-layout {
     grid-template-columns: 260px 260px;
