@@ -155,12 +155,7 @@ main {
   background-color: #fee8c8;
   width: auto;
 }
-header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  gap: 0px;
-}
+
 nav a[aria-current="page"] {
   padding-bottom: 5px;
   border-bottom: solid 1px transparent;
@@ -296,6 +291,7 @@ a {
 
 /*CURTAIN MENU*/
 @media (max-width: 929px) {
+ 
   .menu-toggle {
     border: none;
     background-color: #f7f7ec;
@@ -681,6 +677,12 @@ border-radius: 5px;
 }
 }
 @media (min-width: 1020px){
+   header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  gap: 0px;
+}
     .footer {
      display: flex;
     flex-direction: row;
