@@ -12,10 +12,12 @@ function aceList() {
         document.getElementById("ace-data").innerHTML +=
           "<tbody> <td>" +
           ace.name +
-          "</td> <td>" +
+          "</td><td>" +
           ace.hole +
-          "</td> <td>" +
+          "</td><td>" +
           ace.date +
+          "</td><td>" +
+          ace.type +
           "</td></tbody>";
       });
     });
