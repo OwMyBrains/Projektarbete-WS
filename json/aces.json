@@ -1,38 +1,87 @@
 [
   {
-    "name": "Sam",
-    "hole": "Hål 7",
-    "date": "Datum",
+    "name": "Pether Sand",
+    "hole": "Hål 10",
+    "date": "2026-10-17",
+    "type": "Casual (Glow)"
+  },
+  {
+    "name": "Niclas Hjelm",
+    "hole": "Hål 17",
+    "date": "2025-09-20",
+    "type": "Söndagslir"
+  },
+  {
+    "name": "Sam Sand",
+    "hole": "Hål 14",
+    "date": "2026-09-13",
+    "type": "Söndagslir"
+  },
+  {
+    "name": "Sam Sand",
+    "hole": "Hål 10",
+    "date": "2026-07-16",
     "type": "Casual"
   },
+
   {
-    "name": "Pether",
-    "hole": "Hål 6",
-    "date": "Datum",
-    "type": "Casual (glow)"
-  },
-  {
-    "name": "Måns",
-    "hole": "Hål 9",
-    "date": "Datum",
+    "name": "Per Karlsson",
+    "hole": "Hål 1",
+    "date": "2026-06-14",
     "type": "SNT"
   },
   {
-    "name": "Måns",
-    "hole": "Hål 9",
-    "date": "Datum",
+    "name": "Per Karlsson",
+    "hole": "Hål 17",
+    "date": "2026-06-14",
+    "type": "SNT"
+  },
+  {
+    "name": "Pether Sand",
+    "hole": "Hål 16",
+    "date": "2026-05-31",
+    "type": "Söndagslir"
+  },
+  {
+    "name": "Pether Sand",
+    "hole": "Hål 10",
+    "date": "2026-05-17",
+    "type": "KM"
+  },
+  {
+    "name": "Viktor Henriksson",
+    "hole": "Hål 7",
+    "date": "2026-05-03",
+    "type": "Söndagslir"
+  },
+  {
+    "name": "Pether Sand",
+    "hole": "Hål 2",
+    "date": "2026-04-16",
+    "type": "Söndagslir"
+  },
+  {
+    "name": "Sam Sand",
+    "hole": "Hål 2",
+    "date": "2025-03-28",
     "type": "Casual"
   },
   {
-    "name": "Måns",
-    "hole": "Hål 9",
-    "date": "Datum",
-    "type": "Casual"
+    "name": "Joel Lindmark",
+    "hole": "Hål 10",
+    "date": "2025-06-20",
+    "type": "Söndagslir"
   },
   {
-    "name": "Måns",
-    "hole": "Hål 9",
-    "date": "Datum",
-    "type": "Casual"
+    "name": "Göran Klippenberg",
+    "hole": "Hål 2",
+    "date": "2025-05-25",
+    "type": "Söndagslir"
+  },
+  {
+    "name": "Arvid Andersson",
+    "hole": "Hål 5",
+    "date": "2025-03-23",
+    "type": "Kyldisken"
   }
 ]
