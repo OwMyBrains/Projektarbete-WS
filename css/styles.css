@@ -290,6 +290,9 @@ a {
 .weather-api {
   font-size: 0.8rem;
 }
+.map {
+  text-decoration: underline;
+}
 
 /*CURTAIN MENU*/
 @media (max-width: 929px) {
@@ -404,8 +407,8 @@ a {
 }
 
 .article img {
-  height: 400px;
-  width: auto;
+  height: auto;
+  width: 500px;
 }
 .article div {
   width: auto;
