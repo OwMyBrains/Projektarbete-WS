@@ -115,9 +115,12 @@ flex-direction: row;
   margin: 0;
   padding: 5px 50px 5px 50px;
   background-color: #f7f7ec;
-  width: auto;
+  width: 100VW;
 }
-
+div .medlem-btn{
+  margin-right: 100px;
+margin-left: auto;
+}
 .medlem-btn {
   height: auto;
   width: 130px;
@@ -125,7 +128,7 @@ flex-direction: row;
   background-color: #a8cc78;
   font-size: 1rem;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 0px;
   text-align: center;
   right: 0;
   padding: 13px;
@@ -679,8 +682,6 @@ td {
   }
 }
 @media (min-width: 1155px) {
-
-
   .hole-layout {
     grid-template-columns: 260px 260px 260px 260px;
   }
