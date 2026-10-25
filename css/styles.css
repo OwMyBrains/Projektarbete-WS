@@ -284,13 +284,14 @@ a {
 
 /*MAIN*/
 .text-div {
-  width: auto;
+  width: 80vw;
   height: auto;
   background-color: rgba(247, 247, 236, 0.6);
   padding: 0 30px;
   border-radius: 20px;
   max-width: 500px;
-  margin: 10px 0;
+  min-width: 350px;
+  margin: 10px;
 }
 .hole-layout {
   display: grid;
@@ -320,10 +321,11 @@ a {
 }
 
 .article img {
-  height: auto;
-  width: 400px;
+height: auto;
+  max-width: 600px;
+  width: 80vw;
 }
-.article div {
+.img-div {
   width: auto;
   height: auto;
   padding: 50px;
@@ -623,12 +625,7 @@ border-radius: 5px;
   .hole-layout {
     grid-template-columns: 260px 260px 260px;
   }
-  .article {
-    flex-direction: row;
-    justify-content: center;
-    padding: 0 30px;
-    gap: 20px;
-  }
+
   .submenu {
   height: 45px;
 }
