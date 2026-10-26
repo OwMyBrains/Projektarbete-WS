@@ -62,3 +62,8 @@ Idag fortsätter föreningen att utveckla verksamheten med samma drivkraft som f
 
 Inspiration:
 https://www.hdgc.se/
+
+## FIXA
+
+Bli medlem mindre på mobil
+Förstorning av hålkarta mobil

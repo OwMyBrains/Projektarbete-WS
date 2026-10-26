@@ -42,8 +42,6 @@ function resultListKM() {
           "</td><td>" +
           result.class +
           "</td><td>" +
-          result.place +
-          "</td><td>" +
           result.name +
           "</td></tr></tbody>";
       });
