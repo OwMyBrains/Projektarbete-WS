@@ -1,4 +1,6 @@
 //ACE-lista START
+aceList();
+
 function aceList() {
   fetch("json/aces.json")
     .then((response) => response.json())
@@ -7,7 +9,7 @@ function aceList() {
 
       data.forEach((ace) => {
         document.getElementById("ace-data").innerHTML +=
-          "<tbody> <td>" +
+          "<tbody><tr><td>" +
           ace.name +
           "</td><td>" +
           ace.hole +
@@ -15,10 +17,8 @@ function aceList() {
           ace.date +
           "</td><td>" +
           ace.type +
-          "</td></tbody>";
+          "</td></tr></tbody>";
       });
     });
 }
 //ACE-lista SLUT
-
-aceList();
