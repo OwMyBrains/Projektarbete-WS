@@ -16,6 +16,7 @@
 	<link rel="icon" type="image/x-icon" href="/images/favicon-package/black/favicon.svg"
 		media="(prefers-color-scheme: light)">
 	<script src="js/main.js" defer></script>
+	<script src="https://forminit.com/sdk/v1/forminit.js"></script>
 	<title>Woodensala - Kontakt</title>
 </head>
 
@@ -389,16 +390,15 @@
 					<li>Har en en fråga eller fundering? Kontakta oss via formuläret.
 					</li>
 				</ul>
-				<form id="contact">
-					<label for="name">Namn</label><br>
-					<input type="text" name="name" id="name"><br>
-					<label for="email">E-postadress</label><br>
-					<input type="email" name="email" id="email"><br>
-					<label for="subject">Ämne</label><br>
-					<input type="text" name="subject" id="subject"><br>
-					<label for="text">Skriv din fråga här</label><br>
-					<textarea name="text" id="text" rows="10" cols="30"></textarea><br>
+				<form id="contact-form" enctype="multipart/form-data">
+					<label for="fi-sender-fullName">Namn</label><br>
+					<input type="text" name="fi-sender-fullName" id="fi-sender-fullName"><br>
+					<label for="fi-sender-email">E-postadress</label><br>
+					<input type="email" name="fi-sender-email" id="fi-sender-email"><br>
+					<label for="fi-text-message">Skriv din fråga här</label><br>
+					<textarea name="fi-text-message" id="fi-text-message" rows="10" cols="30"></textarea><br>
 					<button type="submit">Skicka</button>
+					<p id="form-status"></p>
 				</form>
 
 			</div>

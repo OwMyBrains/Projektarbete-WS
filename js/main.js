@@ -34,18 +34,11 @@ function showImage(clickedImage) {
 
 //HOLE LAYOUT GALLERY END
 
-("use strict");
-/*
- * Laboration 5 - Studentkortsgenerator
- * Namn: Pether Sand
- */
-
 // Hämta element från DOM
-const form = document.querySelector("#contact");
-const nameInput = document.querySelector("#name");
-const emailInput = document.querySelector("#email");
-const subjectInput = document.querySelector("#subject");
-const textArea = document.querySelector("#text");
+const form = document.querySelector("#contact-form");
+const nameInput = document.querySelector("#fi-sender-fullName");
+const emailInput = document.querySelector("#fi-sender-email");
+const textArea = document.querySelector("#fi-text-message");
 const errorList = document.querySelector("#errorlist");
 //Submit för informationen
 form.addEventListener("submit", onSubmit);
@@ -53,6 +46,7 @@ form.addEventListener("submit", onSubmit);
 function onSubmit(event) {
   event.preventDefault();
   if (validateForm()) {
+    sendForm();
     clearForm();
   } else {
     displayErrors();
@@ -64,15 +58,14 @@ function onSubmit(event) {
 let errors = [];
 
 /**
- * Validerar formulärets inmatning.
- * @returns {boolean}
- */
+Validerar formulärets inmatning.
+@returns {boolean}
+*/
 
 //Validering av formuläret
 function validateForm() {
   let name = nameInput.value.trim();
   let email = emailInput.value.trim();
-  let subject = subjectInput.value.trim();
   let text = textArea.value.trim();
 
   //Rensar eventuella felmeddelanden sedan tidigare
@@ -82,8 +75,6 @@ function validateForm() {
   if (name.length === 0) {
     return false;
   } else if (email.length === 0) {
-    return false;
-  } else if (subject.length === 0) {
     return false;
   } else if (text.length === 0) {
     return false;
@@ -103,7 +94,6 @@ function displayErrors() {
   //Vilkor för input samt trimma bort onödiga " "
   let name = nameInput.value.trim();
   let email = emailInput.value.trim();
-  let subject = subjectInput.value.trim();
   let text = textArea.value.trim();
 
   //Felmeddelanden
@@ -112,9 +102,6 @@ function displayErrors() {
   }
   if (email.length === 0) {
     errors.push("Du måste ange din E-postadress");
-  }
-  if (subject.length === 0) {
-    errors.push("Du måste ange ett ämne");
   }
   if (text.length === 0) {
     errors.push("Du måste fylla i en fråga.");
@@ -135,6 +122,31 @@ function clearForm() {
   errors = [];
   nameInput.value = "";
   emailInput.value = "";
-  subjectInput.value = "";
   textArea.value = "";
+}
+
+//API för att skicka email från formuläret
+
+const forminit = new Forminit();
+const FORM_ID = "0g9dozsmpdd";
+
+function sendForm() {
+  document
+    .getElementById("contact-form")
+    .addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const formData = new FormData(e.target);
+      const { data, error } = await forminit.submit(FORM_ID, formData);
+
+      const status = document.getElementById("form-status");
+
+      if (error) {
+        status.textContent = error.message;
+        return;
+      }
+
+      status.textContent = "Message sent successfully!";
+      e.target.reset();
+    });
 }
