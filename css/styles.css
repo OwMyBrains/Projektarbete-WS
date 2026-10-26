@@ -131,15 +131,15 @@ div .medlem-btn {
 }
 .medlem-btn {
   height: auto;
-  width: 130px;
-  border-radius: 15px;
+  width: auto;
+  border-radius: 10px;
   background-color: #a8cc78;
   font-size: 1rem;
   margin-left: auto;
   margin-right: 0px;
   text-align: center;
   right: 0;
-  padding: 13px;
+  padding: 10px;
 }
 .medlem-btn:hover {
   background-color: #ff9997;
