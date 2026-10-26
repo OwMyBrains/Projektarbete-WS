@@ -376,6 +376,16 @@ height: auto;
   font-size: 1.3rem;
   opacity: 50%;
 }
+#errorlist {
+  background-color: rgba(255, 153, 151, 0.6);
+  list-style-type: none;
+  color: black;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 10px;
+  width: 300px;
+  height: auto;
+}
 /*MAIN END*/
 
 /*FOOTER*/
@@ -515,19 +525,31 @@ border-radius: 10px;
   width: 300px;
   height: 30px;
   border-radius: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .form textarea {
 border: none;
 width: 300px;
 height:300px;
+padding 5px
 border-radius: 5px;
+margin-left: 5px;
+margin-right: 5px;
 }
 .form button {
   border: none;
   border-radius: 5px;
   padding: 5px;
   background-color: #f7f7ec;
+  margin-left: 10px;
+}
+.form label {
+  margin-left: 10px;
+  font-size: 0.9rem;
 }
 /*FORM LAYOUT END*/
 
