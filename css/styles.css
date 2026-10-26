@@ -376,12 +376,18 @@ height: auto;
   font-size: 1.3rem;
   opacity: 50%;
 }
-#errorlist {
-  background-color: rgba(255, 153, 151, 0.6);
+#form-list {
+  background-color: rgba(255, 153, 151, 0.3);
   list-style-type: none;
   color: black;
-  font-weight: 500;
+  font-weight: 400;
   border-radius: 5px;
+  padding: 10px;
+  width: 300px;
+  height: auto;
+}
+#errorlist {
+  list-style-type:none;
   padding: 10px;
   width: 300px;
   height: auto;

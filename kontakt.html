@@ -17,6 +17,7 @@
 		media="(prefers-color-scheme: light)">
 	<script src="js/main.js" defer></script>
 	<script src="https://forminit.com/sdk/v1/forminit.js"></script>
+	<script src="js/form.js" defer></script>
 	<title>Woodensala - Kontakt</title>
 </head>
 
@@ -386,7 +387,7 @@
 					att kontakta oss via formuläret.</p>
 			</div>
 			<div class="form">
-				<ul id="errorlist">
+				<ul id="form-list">
 					<li>Har en en fråga eller fundering? Kontakta oss via formuläret.
 					</li>
 				</ul>
@@ -398,6 +399,7 @@
 					<label for="fi-text-message">Skriv din fråga här</label><br>
 					<textarea name="fi-text-message" id="fi-text-message" rows="10" cols="30"></textarea><br>
 					<button type="submit">Skicka</button>
+					<ul id="errorlist"></ul>
 					<p id="form-status"></p>
 				</form>
 
