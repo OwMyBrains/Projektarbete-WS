@@ -207,7 +207,7 @@ a {
 .weather-api {
   font-size: 0.8rem;
 }
-.map {
+.underline-link {
   text-decoration: underline;
 }
 
@@ -325,6 +325,18 @@ a {
  padding-bottom: 5px;
  padding-top: 0;
  margin: 10px 0;
+}
+.article2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: auto;
+  width: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+ padding-bottom: 30px;
+ padding-top: 0;
 }
 
 .article img {
