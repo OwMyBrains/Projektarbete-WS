@@ -90,6 +90,10 @@ img {
 .overlay-content a[aria-current="page"] {
   color: #ff9997;
 }
+a {
+  color: black;
+  text-decoration: none;
+}
 
 /*LOGOTYP WS*/
 .ws-logo-200-blk {
@@ -144,25 +148,7 @@ div .medlem-btn {
 .medlem-btn:hover {
   background-color: #ff9997;
 }
-.btn {
-  height: auto;
-  width: 130px;
-  border-radius: 15px;
-  background-color: rgba(255, 153, 151, 0.4);
-  font-size: 1rem;
-  margin-left: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  text-align: center;
-  padding: 13px;
-}
-.btn:hover {
-  background-color: rgba(255, 153, 151, 0.6);
-}
-a {
-  color: black;
-  text-decoration: none;
-}
+
 .menu {
   display: none;
   width: 100%;
@@ -357,6 +343,21 @@ a {
   padding: 20px 0;
   background-color: rgba(255, 153, 151, 0.4);
 }
+.btn {
+  height: auto;
+  width: 130px;
+  border-radius: 15px;
+  background-color: rgba(255, 153, 151, 0.4);
+  font-size: 1rem;
+  margin-left: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  padding: 13px;
+}
+.btn:hover {
+  background-color: rgba(255, 153, 151, 0.6);
+}
 .course {
   display: flex;
   flex-direction: column;
@@ -451,9 +452,11 @@ footer h2 {
   padding: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   z-index: 9999;
-  width: 400px;
+  width: 90vw;
   height: auto;
-  overflow: auto;
+  max-height: 730px;
+  max-width: 530px;
+  overflow: none;
   border-radius: 20px;
 }
 
@@ -472,10 +475,14 @@ footer h2 {
 
 /* Styling for the image */
 .image-container img {
-  width: 360px;
+  width: 83vw;
   height: auto;
+  max-height: 660px;
+  max-width: 490px;
   padding: 10px;
-  border-radius: 40px;
+  margin-right: 0px;
+  margin-left: 0px;
+  border: solid 10px #f7f7ec;
 }
 
 .hole-img {
@@ -569,43 +576,6 @@ td {
 }
 
 @media (min-width: 910px) {
-  .image-container {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #f7f7ec;
-    border: 1px solid #ccc;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    z-index: 9999;
-    width: 500px;
-    height: auto;
-    overflow: auto;
-    border-radius: 20px;
-  }
-
-  /* Styling for the close button */
-  .close-btn {
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    background-color: rgba(255, 153, 151, 0.5);
-    color: black;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 20px;
-  }
-
-  /* Styling for the image */
-  .image-container img {
-    width: 450px;
-    height: auto;
-    padding: 15px;
-    border-radius: 40px;
-  }
-
   .menu-toggle {
     display: none;
   }
