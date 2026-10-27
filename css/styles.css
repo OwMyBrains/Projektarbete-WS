@@ -36,6 +36,7 @@
 
 /*FONTS END*/
 
+/*CSS FOR ALL HTML PAGES*/
 h1 {
   text-align: center;
   margin-left: auto;
@@ -104,6 +105,8 @@ a {
   text-decoration: none;
 }
 
+/*CSS FOR ALL HTML PAGES END*/
+
 /*LOGOTYP WS*/
 .ws-logo-200-blk {
   width: 200px;
@@ -138,6 +141,8 @@ path {
   background-color: #f7f7ec;
   width: 100vw;
 }
+/*BLI MEDLEM BUTTON*/
+
 div .medlem-btn {
   margin-right: 100px;
   margin-left: auto;
@@ -157,7 +162,7 @@ div .medlem-btn {
 .medlem-btn:hover {
   background-color: #ff9997;
 }
-
+/*MENU - SUBMENU*/
 .menu {
   display: none;
   width: 100%;
@@ -188,7 +193,8 @@ div .medlem-btn {
   background-color: #f7f7ec;
   padding: 0;
   margin-top: -30px;
-  height: 45px;
+  margin-left: 20px;
+  height: 25px;
 }
 .submenu li {
   list-style-type: none;
@@ -198,6 +204,7 @@ div .medlem-btn {
   margin-top: 7px;
   padding: 8px;
 }
+/*WEATHER API*/
 #weather {
   text-align: center;
   padding: 5px;
@@ -298,6 +305,7 @@ div .medlem-btn {
   min-width: 350px;
   margin: 10px;
 }
+/*GRID FOR HOLE LAYOUT IMG*/
 .hole-layout {
   display: grid;
   grid-template-columns: 260px;
@@ -311,6 +319,7 @@ div .medlem-btn {
   padding-top: 15px;
   border-bottom: 5px solid #f7f7ec;
 }
+/*ARTICLE CLASS FOR TEXT AND IMG*/
 .article {
   display: flex;
   flex-direction: column;
@@ -348,11 +357,13 @@ div .medlem-btn {
   height: auto;
   padding: 50px;
 }
+/*H1 DIV*/
 .headline {
   width: 100%;
   padding: 20px 0;
   background-color: rgba(255, 153, 151, 0.4);
 }
+/*BUTTONS IN PAGES*/
 .btn {
   height: auto;
   width: 130px;
@@ -368,16 +379,6 @@ div .medlem-btn {
 .btn:hover {
   background-color: rgba(255, 153, 151, 0.6);
 }
-.course {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: auto;
-  gap: 40px;
-  margin-left: auto;
-  margin-right: auto;
-}
 .bgcolor1 {
   background-color: #fee8c8;
 }
@@ -390,6 +391,7 @@ div .medlem-btn {
   font-size: 1.3rem;
   opacity: 50%;
 }
+/*CONTACT FORM*/
 #form-list {
   background-color: rgba(255, 153, 151, 0.3);
   list-style-type: none;
@@ -420,6 +422,7 @@ div .medlem-btn {
   margin-right: auto;
   justify-content: space-around;
 }
+/*LINKS*/
 .footer-links {
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -438,7 +441,7 @@ div .medlem-btn {
 footer h2 {
   text-align: center;
 }
-/*SOACIAL ICONS*/
+/*SOCIAL ICONS*/
 .social {
   display: flex;
   flex-direction: row;
@@ -581,12 +584,14 @@ td {
 }
 /*FORM LAYOUT END*/
 
+/*MEDIA QUERY FOR HOLE LAYOUT GRID*/
 @media (min-width: 580px) {
   .hole-layout {
     grid-template-columns: 260px 260px;
   }
 }
 
+/*MEDIA QUERY FOR NAV-MENU*/
 @media (min-width: 870px) {
   .menu-toggle {
     display: none;
@@ -612,53 +617,50 @@ td {
     height: auto;
     width: auto;
   }
-
-  /* NAVLINK ANIMATION */
-  a {
-    text-decoration: none;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .nav-link a::before,
-  a::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 1px;
-    background: linear-gradient(to right, #ffd4b0, #ff9997);
-    transition: all 0.1s;
-  }
-
-  .nav-link a::before {
-    top: -10px;
-    left: 0;
-  }
-
-  .nav-link a::after {
-    bottom: -10px;
-    right: 0;
-  }
-
-  .nav-link a:hover::before {
-    width: 100%;
-    transition: width 0.2s ease-in-out;
-  }
-
-  .nav-link a:hover::after {
-    width: 100%;
-    transition: width 0.2s ease-in-out 0.2s;
-  }
-  /* NAVLINK ANIMATION END */
-
-  .hole-layout {
-    grid-template-columns: 260px 260px 260px;
-  }
-
-  .submenu {
-    height: 45px;
-  }
 }
+/* NAVLINK ANIMATION */
+a {
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-link a::before,
+a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background: linear-gradient(to right, #ffd4b0, #ff9997);
+  transition: all 0.1s;
+}
+
+.nav-link a::before {
+  top: -10px;
+  left: 0;
+}
+
+.nav-link a::after {
+  bottom: -10px;
+  right: 0;
+}
+
+.nav-link a:hover::before {
+  width: 100%;
+  transition: width 0.2s ease-in-out;
+}
+
+.nav-link a:hover::after {
+  width: 100%;
+  transition: width 0.2s ease-in-out 0.2s;
+}
+/* NAVLINK ANIMATION END */
+
+/*MEDIA QUERY FOR HOLE LAYOUT GRID*/
+.hole-layout {
+  grid-template-columns: 260px 260px 260px;
+}
+
 /*SCREEN BIGGER THAN*/
 @media (min-width: 1020px) {
   .footer {
@@ -676,26 +678,15 @@ td {
 }
 /*SCREEN BIGGER THAN 1155PX*/
 @media (min-width: 1155px) {
+  /*HOLE LAYOUT GRID*/
   .hole-layout {
     grid-template-columns: 260px 260px 260px 260px;
   }
-
+  /*ARTICLE FLEXBOX*/
   .article {
     flex-direction: row;
     justify-content: center;
     padding: 0 100px;
     gap: 30px;
-  }
-  .course {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    width: 800px;
-    gap: 40px;
-    padding-left: 200px;
-    padding-right: 200px;
-  }
-  .submenu {
-    height: 45px;
   }
 }
