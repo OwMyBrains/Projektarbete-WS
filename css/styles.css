@@ -78,11 +78,14 @@ main {
 }
 
 nav a[aria-current="page"] {
-  padding-bottom: 5px;
-  border-bottom: solid 1px transparent;
-  border-image: linear-gradient(to left, #ffd4b0, #ff9997);
-  border-image-slice: 1;
+  color: #ffd4b0;
+  background-image: linear-gradient(90deg, #ffd4b0 0%, #ff9997 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
 }
+
 img {
   border-radius: 10px;
   margin: 10px;
