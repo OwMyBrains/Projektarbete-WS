@@ -1,23 +1,86 @@
 [
   {
-    "competition": "Södra Norrlandstouren",
+    "competition": "Hösttröst",
     "year": "2026",
     "class": "MJ18",
     "place": "1",
-    "name": "Sam"
+    "name": "Sam Sand"
   },
   {
-    "competition": "Södra Norrlandstouren",
+    "competition": "Hösttröst",
     "year": "2026",
-    "class": "MJ18",
+    "class": "WA3",
     "place": "1",
-    "name": "Sam"
+    "name": "Martina Speijer"
   },
   {
-    "competition": "Södra Norrlandstouren",
+    "competition": "Hösttröst",
     "year": "2026",
-    "class": "MJ18",
+    "class": "WA3",
+    "place": "2",
+    "name": "Ceciliah Wikström"
+  },
+  {
+    "competition": "Hösttröst",
+    "year": "2026",
+    "class": "MA3",
     "place": "1",
-    "name": "Sam"
+    "name": "Niclas Hjelm"
+  },
+  {
+    "competition": "Hösttröst",
+    "year": "2026",
+    "class": "MA3",
+    "place": "3",
+    "name": "Pontus Wallentin"
+  },
+  {
+    "competition": "Hösttröst",
+    "year": "2026",
+    "class": "MA4",
+    "place": "1",
+    "name": "Daniel Johansson"
+  },
+  {
+    "competition": "Hösttröst",
+    "year": "2026",
+    "class": "MA4",
+    "place": "2",
+    "name": "Peder Edvinsson"
+  },
+  {
+    "competition": "Hösttröst",
+    "year": "2026",
+    "class": "MA4",
+    "place": "3",
+    "name": "Natalie Engman"
+  },
+  {
+    "competition": "Hösttröst",
+    "year": "2026",
+    "class": "MPO",
+    "place": "1",
+    "name": "Joel Lindmark"
+  },
+  {
+    "competition": "Hösttröst",
+    "year": "2026",
+    "class": "MPO",
+    "place": "1",
+    "name": "Lars Eriksson"
+  },
+  {
+    "competition": "Hösttröst",
+    "year": "2026",
+    "class": "MPO",
+    "place": "3",
+    "name": "Tomas Persson"
+  },
+  {
+    "competition": "---",
+    "year": "---",
+    "class": "---",
+    "place": "---",
+    "name": "---"
   }
 ]
