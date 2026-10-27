@@ -163,7 +163,7 @@ div .medlem-btn {
   font-size: 1rem;
   gap: 1.4rem;
   padding: 13px 13px 0 13px;
-  height: auto;
+  height: 2rem;
 }
 .nav-submenu {
   display: flex;
@@ -296,8 +296,8 @@ div .medlem-btn {
   justify-content: center;
   height: auto;
   min-height: 300px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 15px;
   border-bottom: 5px solid #f7f7ec;
 }
@@ -420,6 +420,15 @@ div .medlem-btn {
   width: auto;
   gap: 20px;
 }
+.footer li {
+  font-size: 0.9rem;
+  list-style-type: none;
+  height: 25px;
+}
+footer h2 {
+  text-align: center;
+}
+/*SOACIAL ICONS*/
 .social {
   display: flex;
   flex-direction: row;
@@ -430,14 +439,6 @@ div .medlem-btn {
 .social-link img {
   height: 40px;
   width: auto;
-}
-.footer li {
-  font-size: 0.9rem;
-  list-style-type: none;
-  height: 25px;
-}
-footer h2 {
-  text-align: center;
 }
 /*FOOTER END*/
 
@@ -488,7 +489,8 @@ footer h2 {
 .hole-img {
   height: 350px;
   width: auto;
-  margin: 40px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 /*HOLE LAYOUT ENLARGE END*/
 
@@ -497,7 +499,7 @@ footer h2 {
 table {
   margin-left: auto;
   margin-right: auto;
-  max-width: 600px;
+  max-width: 520px;
   width: 90vw;
   height: auto;
   text-align: center;
@@ -575,7 +577,7 @@ td {
   }
 }
 
-@media (min-width: 910px) {
+@media (min-width: 870px) {
   .menu-toggle {
     display: none;
   }
@@ -646,44 +648,9 @@ td {
   .submenu {
     height: 45px;
   }
-  table {
-    margin-left: auto;
-    margin-right: auto;
-    width: 600px;
-    height: auto;
-    text-align: center;
-    background-color: rgba(247, 247, 236, 0.5);
-    border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 20px;
-    font-size: 0.9rem;
-  }
-  th {
-    height: auto;
-    width: auto;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: rgba(255, 153, 151, 0.5);
-  }
-  td {
-    height: auto;
-    width: auto;
-    padding: 5px;
-    border-radius: 5px;
-    background-color: rgba(255, 153, 151, 0.3);
-  }
-  .h2-table {
-    text-align: center;
-  }
 }
-
+/*SCREEN BIGGER THAN*/
 @media (min-width: 1020px) {
-  header {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    gap: 0px;
-  }
   .footer {
     display: flex;
     flex-direction: row;
@@ -697,6 +664,7 @@ td {
     gap: 0;
   }
 }
+/*SCREEN BIGGER THAN 1155PX*/
 @media (min-width: 1155px) {
   .hole-layout {
     grid-template-columns: 260px 260px 260px 260px;
@@ -708,7 +676,6 @@ td {
     padding: 0 100px;
     gap: 30px;
   }
-
   .course {
     display: grid;
     grid-template-rows: 1fr 1fr;
