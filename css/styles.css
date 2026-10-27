@@ -96,7 +96,7 @@ img {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 a {
@@ -467,7 +467,7 @@ footer h2 {
   height: auto;
   max-height: 730px;
   max-width: 530px;
-  overflow: none;
+  overflow: hidden;
   border-radius: 20px;
 }
 
