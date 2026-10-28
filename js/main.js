@@ -33,3 +33,9 @@ function showImage(clickedImage) {
 }
 
 //HOLE LAYOUT GALLERY END
+
+//© + Date
+const copywriteEl = document.querySelector("#copywrite");
+let dateToday = new Date();
+
+copywriteEl.innerHTML = `<p>© ${dateToday.getFullYear()} Woodensala Frisbeesällskap</p>`;

@@ -453,6 +453,11 @@ footer h2 {
   height: 40px;
   width: auto;
 }
+#copywrite {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 0.8rem;
+}
 /*FOOTER END*/
 
 /*HOLE LAYOUT ENLARGE*/
