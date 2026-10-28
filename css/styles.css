@@ -611,7 +611,6 @@ td {
     align-items: center;
     justify-content: flex-end;
   }
-
   .nav-link {
     padding: 13px;
     height: auto;
@@ -657,8 +656,10 @@ a::after {
 /* NAVLINK ANIMATION END */
 
 /*MEDIA QUERY FOR HOLE LAYOUT GRID*/
-.hole-layout {
-  grid-template-columns: 260px 260px 260px;
+@media (min-width: 970px) {
+  .hole-layout {
+    grid-template-columns: 260px 260px 260px;
+  }
 }
 
 /*SCREEN BIGGER THAN*/
