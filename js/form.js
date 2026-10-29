@@ -5,6 +5,9 @@ const emailInput = document.querySelector("#fi-sender-email");
 const textArea = document.querySelector("#fi-text-message");
 const errorList = document.querySelector("#errorlist");
 const statusList = document.querySelector("#form-status");
+const nameInputLocal = document.querySelector("#fi-sender-fullName");
+const emailInputLocal = document.querySelector("#fi-sender-email");
+
 //Submit för informationen
 
 // Array som används för felmeddelanden
@@ -24,6 +27,7 @@ function validateForm() {
   //Rensar eventuella felmeddelanden sedan tidigare
   errors = [];
   errorList.innerHTML = "";
+  statusList.textContent = "";
   //Vilkor för valideringen, om alla stämmer går det vidare
   if (name.length === 0) {
     return false;
@@ -76,6 +80,7 @@ const FORM_ID = "0g9dozsmpdd";
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
   if (validateForm()) {
+    saveLocal();
     statusList.textContent = "Skickar meddelandet";
     const formData = new FormData(e.target);
     const { data, error } = await forminit.submit(FORM_ID, formData);
@@ -91,8 +96,12 @@ form.addEventListener("submit", async (e) => {
     emailInput.value = "";
     textArea.value = "";
     e.target.reset();
-    console.log();
   } else {
     displayErrors();
   }
 });
+
+function saveLocal() {
+  localStorage.setItem("name", nameInputLocal.value);
+  localStorage.setItem("email", emailInputLocal.value);
+}
