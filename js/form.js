@@ -75,7 +75,7 @@ function displayErrors() {
 //API för att skicka email från formuläret
 
 const forminit = new Forminit();
-const FORM_ID = "0g9dozsmpdd";
+const FORM_ID = "zg8owb3fgdp";
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
