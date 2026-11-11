@@ -192,8 +192,9 @@ div .medlem-btn {
 .submenu {
   background-color: #f7f7ec;
   padding: 0;
-  margin-top: -30px;
+  margin-top: -20px;
   margin-left: 20px;
+  margin-bottom: 0;
   height: 25px;
 }
 .submenu li {
@@ -203,6 +204,18 @@ div .medlem-btn {
   font-size: 0.8rem;
   margin-top: 7px;
   padding: 8px;
+}
+.current-page {
+  background-color: #ffc7b6;
+  border-radius: 5px 5px 0 0;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+.not-current-page {
+  background-color: rgba(255, 199, 182, 0.4);
+  border-radius: 5px 5px 0 0;
+  margin-left: 1px;
+  margin-right: 1px;
 }
 /*WEATHER API*/
 #weather {
@@ -360,8 +373,9 @@ div .medlem-btn {
 /*H1 DIV*/
 .headline {
   width: 100%;
+  margin-top: 15px;
   padding: 20px 0;
-  background-color: rgba(255, 153, 151, 0.4);
+  background-color: #ffc7b6;
 }
 /*BUTTONS IN PAGES*/
 .btn {
